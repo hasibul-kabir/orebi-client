@@ -4,11 +4,11 @@ import { HiMenuAlt1 } from 'react-icons/hi';
 
 const Nav = () => {
     const [open, setOpen] = useState(false);
-    const dmenuref = useRef();
+    const navRef = useRef();
 
     useEffect(() => {
         document.body.addEventListener("click", (e) => {
-            if (dmenuref.current.contains(e.target)) {
+            if (navRef.current.contains(e.target)) {
                 setOpen(true)
             } else {
                 setOpen(false)
@@ -23,12 +23,12 @@ const Nav = () => {
                     <img src={Logo} alt='Logo' />
                 </a>
             </div>
-            <div className='dropdown-menu lg:hidden px-5 cursor-pointer' ref={dmenuref}>
+            <div className='dropdown-menu lg:hidden px-5 cursor-pointer' ref={navRef}>
                 <HiMenuAlt1 />
             </div>
             {
                 open &&
-                <div className='absolute top-12 right-8 lg:hidden bg-gray-100 w-1/4'>
+                <div className='absolute z-10 top-12 right-8 lg:hidden bg-gray-100 w-1/4'>
                     <ul className='w-full divide-y'>
                         <li className='hover:bg-primary hover:text-white px-3 py-2 cursor-pointer'>Home</li>
                         <li className='hover:bg-primary hover:text-white px-3 py-2 cursor-pointer'>Shop</li>
