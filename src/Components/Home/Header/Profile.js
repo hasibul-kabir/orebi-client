@@ -11,7 +11,7 @@ const Profile = ({ profileRef, openProfile }) => {
             </div>
             {
                 openProfile &&
-                <div className='absolute top-10 right-0 w-40'>
+                <div className='absolute top-10 right-0 w-40 shadow-lg bg-white z-10'>
                     <ul className='w-full divide-y'>
                         <li className='px-3 py-2 cursor-pointer hover:bg-primary hover:text-white'>Profile</li>
                         <li className='px-3 py-2 cursor-pointer hover:bg-primary hover:text-white'>Dashboard</li>

@@ -10,7 +10,7 @@ const Category = ({ openCategory, categoryRef }) => {
             </div>
             {
                 openCategory &&
-                <div className='absolute top-10 left-2  bg-primary w-40 lg:w-48'>
+                <div className='absolute top-10 left-2  bg-primary w-40 lg:w-48 z-10'>
                     <ul className='w-full divide-y'>
                         <li className='text-white px-3 py-2 cursor-pointer hover:font-bold hover:pl-5 ease-in duration-200'>Accesories</li>
                         <li className='text-white px-3 py-2 cursor-pointer hover:font-bold hover:pl-5 ease-in duration-200'>Furniture</li>

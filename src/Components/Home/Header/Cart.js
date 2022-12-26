@@ -11,7 +11,7 @@ const Cart = ({ cartRef, openCart }) => {
             </div>
             {
                 openCart &&
-                <div className='absolute top-10 right-0 w-max  border border-secondary'>
+                <div className='absolute top-10 right-0 w-max border border-secondary z-10 shadow-lg'>
                     <div className='product flex items-center gap-x-10 p-5 bg-secondary'>
                         <div className='flex items-center gap-x-3'>
                             <img src={Image} alt='product_img' />
@@ -22,7 +22,7 @@ const Cart = ({ cartRef, openCart }) => {
                         </div>
                         <ImCross />
                     </div>
-                    <div className='p-5'>
+                    <div className='p-5 bg-white'>
                         <p className='font-bold pb-5'><span className='font-midium text-zinc-400 pr-2'>Subtotal:</span>$44.00</p>
                         <div className='btns flex justify-between'>
                             <button className='px-6 py-2 border border-primary hover:bg-primary hover:text-white font-bold'>View Cart</button>
