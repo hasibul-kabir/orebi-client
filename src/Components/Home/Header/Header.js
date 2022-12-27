@@ -35,7 +35,7 @@ const Header = () => {
     }, [])
 
     return (
-        <div className='header py-4 flex items-center justify-between'>
+        <div className='header px-4 lg:px-8 py-4 flex items-center justify-between'>
             <Category openCategory={openCategory} categoryRef={categoryRef} />
             <Search />
             <div className='flex items-center gap-x-2 lg:gap-x-5'>

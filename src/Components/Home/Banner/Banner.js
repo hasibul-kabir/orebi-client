@@ -75,24 +75,21 @@ const Banner = () => {
         ]
     };
     return (
-        <Slider {...settings}>
+        <div className='px-4 lg:px-8'>
+            <Slider {...settings}>
+                <div>
+                    <img src={Slider1} alt='banner_image' />
+                </div>
 
-            <div>
-                <img src={Slider1} alt='banner_image' />
-            </div>
+                <div>
+                    <img src={Slider1} alt='banner_image' />
+                </div>
 
-
-            <div>
-                <img src={Slider1} alt='banner_image' />
-            </div>
-
-
-            <div>
-                <img src={Slider1} alt='banner_image' />
-            </div>
-
-
-        </Slider>
+                <div>
+                    <img src={Slider1} alt='banner_image' />
+                </div>
+            </Slider>
+        </div>
     )
 }
 
