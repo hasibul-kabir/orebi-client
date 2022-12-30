@@ -7,7 +7,7 @@ import Slider1 from '../../../assets/Image/slider-1.png';
 
 const Banner = () => {
     const [activeSlide, setActiveSlide] = useState(0);
-    var settings = {
+    let settings = {
         dots: true,
         arrows: false,
         infinite: true,

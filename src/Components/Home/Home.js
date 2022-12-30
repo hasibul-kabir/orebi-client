@@ -3,6 +3,7 @@ import Advertise from './Advertise/Advertise'
 import Banner from './Banner/Banner'
 import Facilities from './Facilities/Facilities'
 import Header from './Header/Header'
+import NewArrivals from './NewArrivals/NewArrivals'
 
 const Home = () => {
     return (
@@ -18,6 +19,9 @@ const Home = () => {
             </section>
             <section id='advertise'>
                 <Advertise />
+            </section>
+            <section id='newarrival'>
+                <NewArrivals />
             </section>
         </div>
     )

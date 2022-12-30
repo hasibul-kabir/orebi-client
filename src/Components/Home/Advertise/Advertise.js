@@ -5,7 +5,7 @@ import ad3 from '../../../assets/Image/ad3.png';
 
 const Advertise = () => {
     return (
-        <div className='px-8 bg-white flex justify-between gap-x-4 lg:gap-x-10 py-10'>
+        <div className='px-4 lg:px-8 bg-white flex justify-between gap-x-4 lg:gap-x-10 py-10'>
             <div className=''>
                 <img src={ad1} alt='ad_img' />
             </div>
