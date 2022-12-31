@@ -1,6 +1,7 @@
 import React from 'react'
 import Advertise from './Advertise/Advertise'
 import Banner from './Banner/Banner'
+import BestSeller from './BestSeller/BestSeller'
 import Facilities from './Facilities/Facilities'
 import Header from './Header/Header'
 import NewArrivals from './NewArrivals/NewArrivals'
@@ -22,6 +23,9 @@ const Home = () => {
             </section>
             <section id='newarrival'>
                 <NewArrivals />
+            </section>
+            <section id='bestseller'>
+                <BestSeller />
             </section>
         </div>
     )

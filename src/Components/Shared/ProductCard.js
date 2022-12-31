@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProductCard = ({ badge, img, children }) => {
     return (
-        <div className='lg:max-w-fit max-w-fit shadow-sm mx-1'>
+        <div className='lg:max-w-[300px] max-w-fit shadow-sm mx-1'>
             <div className='relative overflow-hidden group'>
                 <img src={img} alt="newProductImg" />
                 {

@@ -14,7 +14,7 @@ function SampleNextArrow(props) {
     return (
         <div
             className={className}
-            style={{ ...style, display: "block", scale: "3", left: "93%", zIndex: '1', background: "none", borderRadius: "50%", boxShadow: "1px 1px 3px 1px rgba(0.2, 0.2, 0.2, 0.2)" }}
+            style={{ ...style, display: "block", scale: "3", left: "95%", zIndex: '1', background: "none", borderRadius: "50%", boxShadow: "1px 1px 3px 1px rgba(0.2, 0.2, 0.2, 0.2)" }}
             onClick={onClick}
         />
     );
@@ -25,7 +25,7 @@ function SamplePrevArrow(props) {
     return (
         <div
             className={className}
-            style={{ ...style, display: "block", scale: "3", left: "0", zIndex: '1', background: "none", borderRadius: "50%", boxShadow: "1px 1px 3px 1px rgba(0.2, 0.2, 0.2, 0.2)" }}
+            style={{ ...style, display: "block", scale: "3", left: "2%", zIndex: '1', background: "none", borderRadius: "50%", boxShadow: "1px 1px 3px 1px rgba(0.2, 0.2, 0.2, 0.2)" }}
             onClick={onClick}
         />
     );
@@ -36,8 +36,8 @@ const NewArrivals = () => {
         arrows: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         autoplay: true,
         autoplaySpeed: 5000,
         cssEase: "linear",
@@ -47,8 +47,8 @@ const NewArrivals = () => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
                 }
             },
             {
