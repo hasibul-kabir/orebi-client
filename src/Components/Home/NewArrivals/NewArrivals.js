@@ -8,39 +8,40 @@ import newArrival1 from "../../../assets/Image/newArrival1.png";
 import newArrival2 from "../../../assets/Image/newArrival2.png";
 import newArrival3 from "../../../assets/Image/newArrival3.png";
 import newArrival4 from "../../../assets/Image/newArrival4.png";
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { style, onClick } = props;
     return (
-        <div
-            className={className}
-            style={{ ...style, display: "block", scale: "3", left: "95%", zIndex: '1', background: "none", borderRadius: "50%", boxShadow: "1px 1px 3px 1px rgba(0.2, 0.2, 0.2, 0.2)" }}
+        <span
+            className='absolute top-[38%] right-0 z-10'
+            style={{ ...style }}
             onClick={onClick}
-        />
+        >
+            <FaAngleRight className='text-3xl text-black' />
+        </span>
     );
 }
 
 function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { style, onClick } = props;
     return (
-        <div
-            className={className}
-            style={{ ...style, display: "block", scale: "3", left: "2%", zIndex: '1', background: "none", borderRadius: "50%", boxShadow: "1px 1px 3px 1px rgba(0.2, 0.2, 0.2, 0.2)" }}
+        <span
+            className='absolute top-[38%] left-0 z-10'
+            style={{ ...style }}
             onClick={onClick}
-        />
+        >
+            <FaAngleLeft className='text-3xl text-black' />
+        </span>
     );
 }
 
 const NewArrivals = () => {
     let settings = {
-        arrows: true,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        cssEase: "linear",
         prevArrow: <SamplePrevArrow />,
         nextArrow: <SampleNextArrow />,
         responsive: [

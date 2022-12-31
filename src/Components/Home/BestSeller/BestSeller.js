@@ -4,6 +4,7 @@ import bestSeller from '../../../assets/Image/bestSeller.png'
 import bestSeller1 from '../../../assets/Image/bestSeller1.png'
 import bestSeller2 from '../../../assets/Image/bestSeller2.png'
 import bestSeller3 from '../../../assets/Image/bestSeller3.png'
+import bestSP from '../../../assets/Image/bestSP.png';
 
 const BestSeller = () => {
     return (
@@ -14,6 +15,9 @@ const BestSeller = () => {
                 <ProductCard img={bestSeller1} />
                 <ProductCard badge="New" img={bestSeller2} />
                 <ProductCard img={bestSeller3} />
+            </div>
+            <div className='py-10'>
+                <img src={bestSP} alt="bestSalesProduct" />
             </div>
         </div>
     )

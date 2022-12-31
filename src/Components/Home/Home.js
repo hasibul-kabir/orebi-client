@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer/Footer'
 import Advertise from './Advertise/Advertise'
 import Banner from './Banner/Banner'
 import BestSeller from './BestSeller/BestSeller'
@@ -27,6 +28,7 @@ const Home = () => {
             <section id='bestseller'>
                 <BestSeller />
             </section>
+            <Footer />
         </div>
     )
 }
